@@ -42,7 +42,7 @@ const createApp = () => {
 
       const { insertId } = response;
 
-      if (!insertId) return res.status(400).send('Failed to insert todo');
+      if (!insertId) return res.status(400).send('Failed to create todo');
 
       const todo: Todo = {
         id: insertId,
